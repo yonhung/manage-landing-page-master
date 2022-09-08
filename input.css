@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url('../images/bg-tablet-pattern.svg');
+  background-repeat: none;
+  background-size: 800px;
+  background-position: 90% -25%;
+}
+
+#cta {
+  background-image: url(../images/bg-simplify-section-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+@media(max-width:576px) {
+  body{
+    background-position: 50px -50px;
+    background-size: 500px;
+  }
+
+  #cta {
+    background-image: url(../images/bg-simplify-section-mobile.svg);
+  }
+}
+
+/* Hamburger Menu*/
+.hamburger {
+  cursor:pointer;
+  width:24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top:0;
+  left:0;
+  width:24px;
+  height:2px;
+  background-color: black;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.dot--active {
+  background-color: theme('colors.brightRed');
+}
+
+/* Touch Slider */
+.slider-container {
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+  /* touch-action: none; */
+}
+
+.slide img{
+  transition:transform 0.3s ease-out;
+}
+
+.grabbing {
+  cursor: grabbing;
+}
