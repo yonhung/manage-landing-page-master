@@ -67,21 +67,26 @@ body {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
+.grabbing {
+  cursor: grabbing;
+}
+
 .dot--active {
   background-color: theme('colors.brightRed');
 }
 
-/* Touch Slider */
-.slider-container {
-  transform: translateX(0);
-  transition: transform 0.3s ease-out;
-  /* touch-action: none; */
+.dot {
+  display: inline-block;
+  width:.5rem;
+  height: .5rem;
+  border: 1px solid theme('colors.brightRed');
+  border-radius: 100%;
 }
 
-.slide img{
-  transition:transform 0.3s ease-out;
+.dot + .dot {
+  margin-left: .3rem;
 }
 
-.grabbing {
-  cursor: grabbing;
+.swiper-pagination { 
+  position: static !important;
 }

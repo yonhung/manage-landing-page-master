@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <title>Tailwind Course</title>
 </head>
 
@@ -162,69 +165,55 @@
   <!-- Testimonials Section -->
   <section id="testimonials">
     <!-- Container to heading and testm blocks -->
-    <div class="max-w-6xl px-5 mx-auto mt-32 text-center overflow-hidden">
+    <div class="max-w-7xl px-5 mx-auto mt-32 text-center">
       <!-- Heading -->
       <h2 class="text-4xl font-bold text-center">
         What they've said
       </h2>
 
       <!-- Testimonials Container -->
-      <div class="slider-container flex space-x-5 mt-24">
-        <!-- Testimonial 1 -->
-        <div class="slide flex-shrink-0 basis-full flex flex-col items-center p-4 space-y-4 
-        rounded-l bg-veryLightGray md:flex-1">
-          <img src="images/avatar-anisha.png" class="w-16 -mt-10" alt="avatar-anisha">
-          <h5 class="text-lg font-bold">Anisha Li</h5>
-          <p class="text-sm text-darkGrayishBlue">“Manage has supercharged our team’s workflow. The ability to maintain
-            visibility on larger milestones at all times keeps everyone motivated.”</p>
-        </div>
-
-        <!-- Testimonial 2 -->
-        <div class="slide flex-shrink-0 basis-full flex flex-col items-center p-4 space-y-4 
-                rounded-l bg-veryLightGray md:flex-1">
-          <img src="images/avatar-ali.png" class="w-16 -mt-10" alt="avatar-ali">
-          <h5 class="text-lg font-bold">Ali Bravo</h5>
-          <p class="text-sm text-darkGrayishBlue">“We have been able to cancel so many other subscriptions since using
-            Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
-        </div>
-
-        <!-- Testimonial 3 -->
-        <div class="slide flex-shrink-0 basis-full flex flex-col items-center p-4 space-y-4 
-        rounded-l bg-veryLightGray md:flex-1">
-          <img src="images/avatar-richard.png" class="w-16 -mt-10" alt="avatar-richard">
-          <h5 class="text-lg font-bold">Richard Watts</h5>
-          <p class="text-sm text-darkGrayishBlue">“Manage allows us to provide structure and process. It keeps us
-            organized
-            and focused. I can’t stop recommending them to everyone I talk to!”</p>
-        </div>
-
-        <!-- Testimonial 4 -->
-        <div class="slide flex-shrink-0 basis-full flex flex-col items-center p-4 space-y-4 
-        rounded-l bg-veryLightGray md:flex-1">
-          <img src="images/avatar-shanai.png" class="w-16 -mt-10" alt="avatar-shanai">
-          <h5 class="text-lg font-bold">Shanai Gough</h5>
-          <p class="text-sm text-darkGrayishBlue"> “Their software allows us to track, manage and collaborate on our
-            projects
-            from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+      <div class="swiper select-none">
+        <div class="swiper-wrapper rounded-xl mt-24 md:flex md:space-x-6">
+          <!-- Testimonial 1 -->
+          <div class="swiper-slide flex flex-col items-center p-4 space-y-4
+          rounded-xl bg-veryLightGray md:flex-1">
+            <img src="images/avatar-anisha.png" class="w-16 -mt-10 select-none" alt="avatar-anisha">
+            <h5 class="text-lg font-bold">Anisha Li</h5>
+            <p class="text-sm text-darkGrayishBlue">“Manage has supercharged our team’s workflow. The ability to
+              maintain
+              visibility on larger milestones at all times keeps everyone motivated.”</p>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="swiper-slide flex flex-col items-center p-4 space-y-4
+                  rounded-xl bg-veryLightGray md:flex-1">
+            <img src="images/avatar-ali.png" class="w-16 -mt-10" alt="avatar-ali">
+            <h5 class="text-lg font-bold">Ali Bravo</h5>
+            <p class="text-sm text-darkGrayishBlue">“We have been able to cancel so many other subscriptions since using
+              Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="swiper-slide flex flex-col items-center p-4 space-y-4
+          rounded-xl bg-veryLightGray md:flex-1">
+            <img src="images/avatar-richard.png" class="w-16 -mt-10" alt="avatar-richard">
+            <h5 class="text-lg font-bold">Richard Watts</h5>
+            <p class="text-sm text-darkGrayishBlue">“Manage allows us to provide structure and process. It keeps us
+              organized
+              and focused. I can’t stop recommending them to everyone I talk to!”</p>
+          </div>
+          <!-- Testimonial 4 -->
+          <div class="swiper-slide flex flex-col items-center p-4 space-y-4
+          rounded-xl bg-veryLightGray md:flex-1">
+            <img src="images/avatar-shanai.png" class="w-16 -mt-10" alt="avatar-shanai">
+            <h5 class="text-lg font-bold">Shanai Gough</h5>
+            <p class="text-sm text-darkGrayishBlue"> “Their software allows us to track, manage and collaborate on our
+              projects
+              from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+          </div>
         </div>
       </div>
 
       <!-- Carrousel Buttons -->
-      <div class="md:hidden space-x-1">
-        <span class="dot dot--active inline-block w-2 h-2 cursor-pointer 
-        border-2 border-brightRed border-solid rounded-full">
-        </span>
-        <span class="dot inline-block w-2 h-2 cursor-pointer 
-        border-2 border-brightRed border-solid rounded-full">
-        </span>
-        <span class="dot inline-block w-2 h-2 cursor-pointer 
-        border-2 border-brightRed border-solid rounded-full">
-        </span>
-        <span class="dot inline-block w-2 h-2 cursor-pointer 
-        border-2 border-brightRed border-solid rounded-full">
-        </span>
-      </div>
-
+      <div class="swiper-pagination md:hidden"></div>
       <!-- Button -->
       <div class="my-16">
         <a href="#" class="px-6 py-2 bg-brightRed text-white rounded-full
